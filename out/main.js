@@ -1,20 +1,15 @@
-
-
-function print(x) {
-    var str = "";
-    for (var j = 0; j < x; j++) {
-        str = "";
-        for (var k = 0; k < x - j - 1; k++) {
-            str += " ";
+function Print_Pyramid(totalLine) {
+    for (var currentLine = 0; currentLine < totalLine; currentLine++) {
+        var singleLineStr = "";
+        for (var spaceCount = totalLine - currentLine; spaceCount > 0; spaceCount--) {
+            singleLineStr += " ";
         }
-        for (var i = 0; i < 2 * j + 1; i++) {
-            str += "*";
+        for (var starCount = 0; starCount < (currentLine * 2) - 1; starCount++) {
+            singleLineStr += "*";
         }
-        console.log(str);
+        console.log(singleLineStr);
     }
 }
-
 window.onload = function () {
-    print(5);
+    Print_Pyramid(5);
 };
-//# sourceMappingURL=main.js.map
