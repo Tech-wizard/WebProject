@@ -13,3 +13,4 @@ function Print_Pyramid(totalLine) {
 window.onload = function () {
     Print_Pyramid(5);
 };
+//# sourceMappingURL=main.js.map
